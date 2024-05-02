@@ -7,7 +7,7 @@ def open_google_search(domains_file):
         for domain in file:
             domain = domain.strip()  # Remove any extra whitespace or newlines
             if domain: 
-                url = f"https://www.google.com/search?q=site:{domain}"
+                url = f"https://www.google.com/search?q=site:{domain} -www"
                 webbrowser.open_new_tab(url)
                 time.sleep(1) 
 
